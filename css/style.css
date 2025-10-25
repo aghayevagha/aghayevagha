@@ -89,8 +89,8 @@ nav {
 }
 
 .about-image img {
-    width: 70%;
-    max-width: 250px;
+    width: 85%;           /* takes most of its column but not full width */
+    max-width: 230px;     /* good balance between small and large */
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
