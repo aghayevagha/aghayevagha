@@ -88,9 +88,15 @@ nav {
     flex: 1 1 55%;
 }
 
+.about-image {
+    flex: 1 1 40%;      /* slightly larger column so image has more room */
+    text-align: center;
+}
+
 .about-image img {
-    width: 85%;           /* takes most of its column but not full width */
-    max-width: 230px;     /* good balance between small and large */
+    width: 90%;           /* image takes most of column */
+    max-width: 250px;     /* controls largest size on wide screens */
+    min-width: 180px;     /* ensures it doesn't shrink too small on narrow screens */
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
