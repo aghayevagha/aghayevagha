@@ -73,10 +73,39 @@ nav {
     padding-bottom: 5px;
 }
 
-.about-text, .about-image {
-    display: inline-block;
-    vertical-align: top;
+.about-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
 }
+
+.about-text {
+    flex: 1 1 55%;
+}
+
+.about-image {
+    flex: 1 1 35%;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.email {
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+.section-container h2 {
+    border-bottom: 1px solid var(--primary-color); /* thinner line */
+    padding-bottom: 5px;
+}
+
 
 .about-text {
     width: 60%;
