@@ -64,7 +64,7 @@ nav {
 
 /* Section container */
 .section-container {
-    padding: 30px 40px 40px 40px; /* smaller top/bottom padding */
+    padding: 0px 40px 40px 40px; /* smaller top/bottom padding */
     max-width: 1000px;
     margin: auto;
 }
@@ -76,7 +76,7 @@ nav {
 }
 #about .section-container {
     padding-top: 100px;   /* more space above About Me */
-    padding-bottom: 80px; /* more space below About Me */
+    padding-bottom: 40px; /* more space below About Me */
 }
 /* About Section */
 .about-flex {
@@ -89,11 +89,11 @@ nav {
 }
 
 .about-text {
-    flex: 1 1 55%;
+    flex: 1 1 68%;
 }
 
 .about-image {
-    flex: 1 1 40%;      /* slightly larger column so image has more room */
+    flex: 1 1 30%;      /* slightly larger column so image has more room */
     text-align: center;
 }
 
@@ -152,3 +152,122 @@ nav {
   line-height: 1.6;
 }
 
+/*Experience*/
+.experience-item {
+    margin-bottom: 20px;
+    padding: 15px 20px;                    /* adds card padding */
+    border-left: 4px solid var(--accent-color);  /* visual accent line */
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);     /* subtle shadow */
+    background-color: var(--bg-color);          /* keeps dark/light mode */
+}
+
+.experience-item h3 {
+    color: var(--primary-color);          /* slightly darker for title */
+    font-size: 1.2rem;
+    margin: 0 0 6px 0;                     /* smaller margin for compact look */
+}
+
+.experience-item p {
+    margin: 2px 0;                        /* reduce vertical gaps */
+    line-height: 1.4;                     /* tighter spacing */
+    color: var(--text-color);
+}
+
+.experience-item strong {
+    color: var(--accent-color);           /* highlights labels like Supervisor, Institution */
+}
+
+
+/* publications */
+/* Publications */
+.publication {
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    background-color: rgba(0, 115, 204, 0.05); /* very light blue */
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.publication:hover {
+    transform: translateY(-2px);
+}
+
+.publication h3 {
+    color: var(--accent-color);
+    margin-bottom: 6px;
+    font-size: 1.15rem;
+}
+
+.publication h3 a {
+    text-decoration: none;  /* remove underline */
+    color: inherit;
+}
+
+.publication h3 a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.publication .citation {
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+.publication .abstract {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 4px;
+    line-height: 1.5;
+}
+
+
+/* education */
+.education-item {
+    margin-bottom: 20px;
+}
+
+.education-item h3 {
+    color: var(--accent-color);
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.education-item p {
+    margin: 2px 0;
+    line-height: 1.4;
+}
+
+.education-item .thesis {
+    margin-top: 6px;
+    padding-left: 10px; /* slight indent */
+    font-style: italic;
+    color: #555;
+}
+
+
+
+
+/*a*/
+a {
+    text-decoration: none;       /* removes underline */
+    color: #3399ff;              /* lighter blue */
+}
+
+a:hover {
+    color: var(--accent-color);  /* original accent color on hover */
+    text-decoration: none;       /* ensures no underline on hover */
+}
+
+/*  footer */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-top: 1px solid rgba(0,0,0,0.1);
+    font-size: 0.9rem;
+    margin-top: 40px; /* space from last section */
+}
