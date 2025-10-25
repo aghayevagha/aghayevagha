@@ -64,7 +64,7 @@ nav {
 
 /* Section container */
 .section-container {
-    padding: 60px 40px 40px 40px; /* smaller top/bottom padding */
+    padding: 30px 40px 40px 40px; /* smaller top/bottom padding */
     max-width: 1000px;
     margin: auto;
 }
@@ -74,7 +74,10 @@ nav {
     padding-bottom: 5px;
     width: 100%;
 }
-
+#about .section-container {
+    padding-top: 100px;   /* more space above About Me */
+    padding-bottom: 80px; /* more space below About Me */
+}
 /* About Section */
 .about-flex {
     display: flex;
