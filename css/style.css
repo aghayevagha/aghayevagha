@@ -36,6 +36,7 @@ nav {
     padding: 10px 40px;
 }
 
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -63,7 +64,7 @@ nav {
 
 /* Section container */
 .section-container {
-    padding: 100px 40px 60px 40px;
+    padding: 60px 40px 40px 40px; /* smaller top/bottom padding */
     max-width: 1000px;
     margin: auto;
 }
