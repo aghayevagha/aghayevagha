@@ -127,3 +127,19 @@ nav {
         flex: 1 1 100%;
     }
 }
+
+.course {
+  margin-bottom: 20px;
+}
+
+.course h3 {
+  color: var(--accent-color);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.course p {
+  margin-left: 10px;
+  line-height: 1.6;
+}
+
